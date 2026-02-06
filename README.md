@@ -1,6 +1,6 @@
-# HagDe
+# GradPrint
 
-This repository contains the Adversarial Android malware detection system HagDe.
+This repository contains the Adversarial Android malware detection system GradPrint.
 
 Further details can be found in the
 paper *[Fighting Fire with Fire: Continuous Attack for Adversarial Android Malware Detection](https:)*.
@@ -9,7 +9,7 @@ paper *[Fighting Fire with Fire: Continuous Attack for Adversarial Android Malwa
 
 ## Quick Start
 
-HagDe is a detection method that implements defense at the feature level. 
+GradPrint is a detection method that implements defense at the feature level. 
 Therefore, the basis of the Quick Start is a dataset of attack data based on attack methods(we provided here).
 
 
@@ -24,7 +24,7 @@ Therefore, the basis of the Quick Start is a dataset of attack data based on att
 
 2. conda activate 
 ```bash
-  conda activate hagDe
+  conda activate GradPrint
 ```
 
 ### Configuration
@@ -33,7 +33,7 @@ The next step is to fill out configuration in `settings.py`.
 
 Due to the multiple moving parts, we try to resolve most paths to their absolute form to reduce slip-ups.
 
-* `_project_path`: The absolute path to the root folder of the project (e.g., `/tmp/hagDe/`). **Please adjust the project paths according to your project structure.**
+* `_project_path`: The absolute path to the root folder of the project (e.g., `/tmp/GradPrint/`). **Please adjust the project paths according to your project structure.**
 
 The helper functions `_project()` can be used to resolve files in these directories given their relative paths.
 
@@ -44,15 +44,15 @@ Experimental settings:
   e.g., `_project('base_clf_models/')`)
 * `model_save_dir`: The path of target model saved (
   e.g., `_project('checkpoints/')`)
-* `hagDe_result_dir`: The path of running results (
-  e.g., `_project('results/hagDe/')`)
+* `GradPrint_result_dir`: The path of running results (
+  e.g., `_project('results/GradPrint/')`)
 
 
 ### Dataset
 
 To facilitate quick reproduction, we have provided a dataset of adversarial samples generated under the AdvDroidZero attack method in this GitHub project, located in `dataset/AdvDroidZero`. 
 
-For other attack datasets & attack checkpoints, you can obtain them through Zenodo: [Zenodo](https://zenodo.org/uploads/14713949). 
+For other attack datasets & attack checkpoints, you can obtain them through Zenodo:. 
 
 1. The **HIV_JSMA** and **HIV_CW** datasets, as well as the **BagAmmo** dataset, utilize the same **train_sample** and **test_sample**.
 2. Only the checkpoints and dataset directories in Google Drive need to be added in this github project.
@@ -72,8 +72,8 @@ For other attack datasets & attack checkpoints, you can obtain them through Zeno
 As well as the configuration settings, there are a number of command line arguments:
 
 ```
-$ python detection_hagDe.py -h
-usage: detection_hagDe.py [-h] [-R RUN_TAG] [--mode MOAD_LOAD]
+$ python detection_GradPrint.py -h
+usage: detection_GradPrint.py [-h] [-R RUN_TAG] [--mode MOAD_LOAD]
                [--detection DETECTION] [--classifier CLASSIFIER]
                [--attacker ATTACKER] [--Random_sample] [--performance_fixed_param]
 ```
@@ -84,7 +84,7 @@ This stage is to valid adversarial sample detection performance.
 
 Example:
 ```shell
-  python detection_hagDe.py -R detection_hagDe \
+  python detection_GradPrint.py -R detection_GradPrint \
     --mode load \
     --detection mamadroid \
     --classifier rf \
@@ -97,7 +97,7 @@ More shell command lines can be seen in file **command_lines**.
 
 ## Note
 
-The open-source version of HagDe was rapidly prepared, so there might be some bugs.
+The open-source version of GradPrint was rapidly prepared, so there might be some bugs.
 Please feel free to reach out with any questions or report any issues you encounter.
 We are here to assist and improve the repository.
 
@@ -111,3 +111,4 @@ the use of the code to academic purposes and which specifically prohibits commer
 > non-commercial education. Any other use, in particular any use for commercial purposes, is prohibited. This includes,
 > without limitation, incorporation in a commercial product, use in a commercial service, or production of other
 > artefacts for commercial purposes.
+
