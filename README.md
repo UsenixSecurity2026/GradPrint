@@ -2,8 +2,6 @@
 
 This repository contains the Adversarial Android malware detection system GradPrint.
 
-Further details can be found in the
-paper *[Fighting Fire with Fire: Continuous Attack for Adversarial Android Malware Detection](https:)*.
 
 
 
