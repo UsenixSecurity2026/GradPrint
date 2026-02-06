@@ -2,8 +2,6 @@
 
 This repository contains the Adversarial Android malware detection system GradPrint.
 
-Further details can be found in the
-paper *[Fighting Fire with Fire: Continuous Attack for Adversarial Android Malware Detection](https:)*.
 
 
 
@@ -111,4 +109,5 @@ the use of the code to academic purposes and which specifically prohibits commer
 > non-commercial education. Any other use, in particular any use for commercial purposes, is prohibited. This includes,
 > without limitation, incorporation in a commercial product, use in a commercial service, or production of other
 > artefacts for commercial purposes.
+
 
