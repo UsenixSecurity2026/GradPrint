@@ -1,0 +1,12 @@
+checkpoints/*
+!checkpoints/AdvDroidZero
+!checkpoints/AdvDroidZero/**
+
+dataset/*
+!dataset/AdvDroidZero
+!dataset/AdvDroidZero/**
+
+base_clf_models/AdvDroidZero/*.vec
+
+results/*
+
