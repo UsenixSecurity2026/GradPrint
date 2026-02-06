@@ -2,6 +2,7 @@
 
 This repository contains the Adversarial Android malware detection system GradPrint.
 
+Due to GitHub’s file-size limits, the full project (including the dataset and model weight files) is available on Zenodo: [URL].
 
 
 
