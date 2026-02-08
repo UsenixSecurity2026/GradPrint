@@ -51,7 +51,7 @@ Experimental settings:
 
 To facilitate quick reproduction, we have provided a dataset of adversarial samples generated under the AdvDroidZero attack method in this GitHub project, located in `dataset/AdvDroidZero`. 
 
-For other attack datasets & attack checkpoints, you can obtain them through Zenodo: [Zenodo](https://zenodo.org/uploads/14713949). 
+For other attack datasets & attack checkpoints, you can obtain them through Zenodo: [Zenodo](https://zenodo.org/uploads/18513696). 
 
 1. The **HIV_JSMA** and **HIV_CW** datasets, as well as the **BagAmmo** dataset, utilize the same **train_sample** and **test_sample**.
 2. Only the checkpoints and dataset directories in Google Drive need to be added in this github project.
